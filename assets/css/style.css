@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -668,6 +670,7 @@ a {
     color: var(--color) !important;
     font-weight: 500 !important;
     position: relative;
+    background-color: var(--white) !important;
     border: 1px solid var(--color) !important;
     overflow: hidden;
 }
@@ -754,6 +757,10 @@ a {
 
 }
 
+.after-banner-container .after-banner-boxs:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .after-banner-container .after-banner-boxs img {
     width: 100%;
     height: 200px;
@@ -769,6 +776,12 @@ a {
 .after-banner-container .after-banner-boxs .after-banner-content h4 {
     font-weight: 700;
     color: var(--color1);
+}
+
+
+.after-banner-container .after-banner-boxs .after-banner-content p{
+    color: var(--bg-color);
+    font-weight: 500;
 }
 
 @media screen and (max-width:600px) {
@@ -809,6 +822,7 @@ a {
     height: auto;
     padding-top: 5%;
     padding-bottom: 5%;
+    background-image: url(../images/pattern/1.png);
     position: relative;
 }
 
@@ -998,4 +1012,59 @@ a {
     }
     
     }
+    
+    /* Home Make an APPOINTMENTS Start  */
+
+    .home-makeAnAppointments-section{
+        width: 100%;
+        height: 550px;
+        background-image: url(../images/banner/5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin-bottom: 5%;
+        position: relative;
+    }
+
+    .home-makeAnAppointments-section::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(33, 81, 153);
+        background: linear-gradient(90deg, rgba(33, 81, 153, 1) 32%, rgba(255, 255, 255, 0) 100%);
+        z-index: 3;
+    }
+
+    .home-makeAnAppointments-section .home-makeAnAppointments-container{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 7%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        justify-content: center;
+    }
+
+    .home-makeAnAppointments-section .home-makeAnAppointments-container h4{
+        color: var(--white);
+    }
+    .home-makeAnAppointments-section .home-makeAnAppointments-container h2{
+        color: var(--color);
+        font-size: 70px;
+        font-weight: 900;
+        -webkit-text-fill-color: var(--color1);
+        -webkit-text-stroke: 1px var(--white);
+    }
+    .home-makeAnAppointments-section .home-makeAnAppointments-container p{
+        color: var(--white);
+        font-size: 20px;
+        font-family: "Noto Serif", serif !important;
+    }
+
+
     
