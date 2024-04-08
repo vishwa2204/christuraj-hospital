@@ -757,7 +757,7 @@ a {
 
 }
 
-.after-banner-container .after-banner-boxs:hover{
+.after-banner-container .after-banner-boxs:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -779,7 +779,7 @@ a {
 }
 
 
-.after-banner-container .after-banner-boxs .after-banner-content p{
+.after-banner-container .after-banner-boxs .after-banner-content p {
     color: var(--bg-color);
     font-weight: 500;
 }
@@ -852,14 +852,14 @@ a {
 
 }
 
-.home-about-title h4::before{
+.home-about-title h4::before {
     content: '';
     width: 50px;
     height: 3px;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     opacity: 0.5;
     background-color: var(--color);
 }
@@ -971,18 +971,18 @@ a {
         justify-content: center;
         border-right: 1px solid var(--gray);
     }
-    
+
     .home-about-title {
         text-align: center;
-    
+
     }
-    
-    
+
+
     .home-about-boxs .home-about-boxsContent {
         width: 100%;
         text-align: center;
     }
-    
+
 }
 
 .home-about-boxs .home-about-boxsContent p {
@@ -992,7 +992,7 @@ a {
 
 
 @media screen and (max-width:992px) {
-    
+
     .home-about-content .homeAbout-box-container {
         width: 100%;
         height: auto;
@@ -1001,7 +1001,7 @@ a {
         justify-content: center;
         margin-bottom: 5%;
     }
-    
+
     .home-about-images {
         width: 100%;
         height: auto;
@@ -1010,61 +1010,111 @@ a {
         border-bottom-right-radius: 50px;
         overflow: hidden;
     }
-    
-    }
-    
-    /* Home Make an APPOINTMENTS Start  */
 
-    .home-makeAnAppointments-section{
-        width: 100%;
-        height: 550px;
-        background-image: url(../images/banner/5.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        margin-bottom: 5%;
-        position: relative;
-    }
+}
 
-    .home-makeAnAppointments-section::before{
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
+/* Home Make an APPOINTMENTS Start  */
+
+.home-makeAnAppointments-section {
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/banner/5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.home-makeAnAppointments-section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(33, 81, 153);
+    background: linear-gradient(90deg, rgba(33, 81, 153, 1) 32%, rgba(255, 255, 255, 0) 100%);
+    z-index: 3;
+}
+
+.home-makeAnAppointments-section .home-makeAnAppointments-container {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 7%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    justify-content: center;
+}
+
+.home-makeAnAppointments-section .home-makeAnAppointments-container h4 {
+    color: var(--white);
+}
+
+.home-makeAnAppointments-section .home-makeAnAppointments-container h2 {
+    color: var(--color);
+    font-size: 70px;
+    font-weight: 900;
+    -webkit-text-fill-color: var(--color1);
+    -webkit-text-stroke: 1px var(--white);
+}
+
+.home-makeAnAppointments-section .home-makeAnAppointments-container p {
+    color: var(--white);
+    font-size: 20px;
+    font-family: "Noto Serif", serif !important;
+}
+
+.home-makeAnAppointments-section .home-makeAnAppointments-container a {
+    width: 200px;
+    padding: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color);
+    color: var(--white);
+    border-radius: 25px;
+    position: relative;
+    filter: drop-shadow(0 0 10px var(--color));
+}
+
+.home-makeAnAppointments-section .home-makeAnAppointments-container a::before {
+    content: '';
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.5942752100840336) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+}
+
+.home-makeAnAppointments-section .home-makeAnAppointments-container a::after{
+    content: '';
+    width: 20px;
+    height: 30px;
+    background-color: var(--color1);
+    position: absolute;
+    top: 0;
+    right: 10%;
+    clip-path: polygon(30% 0, 0% 100%, 100% 29%);
+    opacity: 0.45;
+    animation: rox 2s linear infinite;
+}
+
+@keyframes rox {
+    0%{
         top: 0;
-        left: 0;
-        background: rgb(33, 81, 153);
-        background: linear-gradient(90deg, rgba(33, 81, 153, 1) 32%, rgba(255, 255, 255, 0) 100%);
-        z-index: 3;
     }
-
-    .home-makeAnAppointments-section .home-makeAnAppointments-container{
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        left: 7%;
+    50%{
+        top: 3px;
+    }
+    100%{
         top: 0;
-        display: flex;
-        flex-direction: column;
-        z-index: 3;
-        justify-content: center;
     }
-
-    .home-makeAnAppointments-section .home-makeAnAppointments-container h4{
-        color: var(--white);
-    }
-    .home-makeAnAppointments-section .home-makeAnAppointments-container h2{
-        color: var(--color);
-        font-size: 70px;
-        font-weight: 900;
-        -webkit-text-fill-color: var(--color1);
-        -webkit-text-stroke: 1px var(--white);
-    }
-    .home-makeAnAppointments-section .home-makeAnAppointments-container p{
-        color: var(--white);
-        font-size: 20px;
-        font-family: "Noto Serif", serif !important;
-    }
-
-
-    
+}
