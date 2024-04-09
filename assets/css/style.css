@@ -1491,3 +1491,209 @@ a {
 .home-howWeDo-content .home-howWeDo-boxs:nth-child(even) .home-howWeDo-boxContent h4{
     color: var(--color1);
 }
+
+
+/* Testimonial Section  */
+
+.testimonial-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--gray);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.testimonial-title {
+    margin-bottom:3%;
+}
+
+.testimonial-title h2 {
+    color: var(--text);
+}
+
+.testimonial-title h2 span {
+    color: var(--color);
+}
+
+.testimonial-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border-radius: 30px;
+    background-color: var(--white);
+    margin-top: 3%;
+}
+
+.testimonial-content .testimonial-icons i {
+    color: gold;
+    filter: drop-shadow(0 0 1px var(--black));
+}
+
+.testimonial-client {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-client .testimonial-image {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-client .testimonial-image img {
+    width: 70px !important;
+    height: 70px !important;
+    object-fit: contain;
+    clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+}
+
+.testimonial-client i {
+    font-size: 50px;
+    color: var(--color1);
+}
+
+.testimonial-client .testimonial-image h3 {
+    font-size: 20px !important;
+    margin-bottom: 0;
+    color: var(--color);
+}
+
+.testimonial-client .testimonial-image span {
+    color: var(--gray);
+    font-size: 15px !important;
+}
+
+
+
+/* faq  */
+
+
+/* faq  */
+
+
+.faq-details {
+    width: 100% !important;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.faq-details h2 span {
+    color: var(--color);
+}
+
+
+.questions-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.question {
+    border-bottom: 1px solid #000000;
+}
+
+.question button {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    text-align: start;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: var(--bg-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.question p {
+    max-height: 0;
+    opacity: 0;
+    font-weight: 500;
+    text-transform: initial;
+    line-height: 1.5;
+    overflow: hidden;
+    color: var(--black);
+    transition: all 0.6s ease;
+}
+
+.question .pa {
+    max-height: 0;
+    opacity: 0;
+    font-weight: 500;
+    text-transform: initial;
+    line-height: 1.5;
+    overflow: hidden;
+    margin: 0;
+    color: var(--black);
+    transition: all 0.6s ease;
+}
+
+.d-arrow {
+    transition: transform 0.5s ease-in;
+    color: #fff;
+}
+
+/*add this class when click*/
+
+.question p.show {
+    max-height: 600px !important;
+    opacity: 1;
+    padding: 0px 15px 30px 15px;
+}
+
+.question .pa.show {
+    max-height: 600px !important;
+    opacity: 1;
+    padding: 10px 15px 30px 55px;
+}
+
+.rotate {
+    transform: rotate(315deg);
+    transition: 0.5s !important;
+}
+
+.achi-ti {
+    background-color: var(--text);
+    color: var(--white);
+    padding: 0.5% 1%;
+    border-radius: 20px;
+}
+
+/* footer  */
+
+footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.footer-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-container .footer-boxs{
+    width: 23%;
+}
