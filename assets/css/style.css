@@ -260,9 +260,6 @@ a {
     z-index: 5;
 }
 
-.nav-menus ul li:hover ul {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
 
 .nav-menus ul li ul li {
     padding: 10px 15px;
@@ -294,6 +291,11 @@ a {
     transition: 0.2s;
     justify-content: space-between;
 }
+
+.serviceOpen {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+}
+
 
 @media screen and (min-width:900px) and (max-width:1024px) {
     .nav-menus {
@@ -470,9 +472,6 @@ a {
 
     }
 
-    .serviceOpen {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
-    }
 
 }
 
@@ -1022,7 +1021,6 @@ a {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    margin-bottom: 5%;
     position: relative;
 }
 
@@ -1094,7 +1092,7 @@ a {
     left: 0;
 }
 
-.home-makeAnAppointments-section .home-makeAnAppointments-container a::after{
+.home-makeAnAppointments-section .home-makeAnAppointments-container a::after {
     content: '';
     width: 20px;
     height: 30px;
@@ -1108,13 +1106,231 @@ a {
 }
 
 @keyframes rox {
-    0%{
+    0% {
         top: 0;
     }
-    50%{
+
+    50% {
         top: 3px;
     }
-    100%{
+
+    100% {
         top: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-makeAnAppointments-section .home-makeAnAppointments-container h2 {
+        color: var(--color);
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-text-fill-color: var(--color1);
+        -webkit-text-stroke: 1px var(--white);
+    }
+
+    .home-makeAnAppointments-section .home-makeAnAppointments-container p {
+        color: var(--white);
+        font-size: 16px;
+        font-family: "Noto Serif", serif !important;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .home-makeAnAppointments-section .home-makeAnAppointments-container {
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        left: 5%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        justify-content: center;
+    }
+}
+
+/* common-heart-section  */
+
+.common-heart-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--gray);
+
+}
+
+.common-heart-title{
+    width: 100%;
+    text-align: center;
+}
+
+.common-heart-title h2{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+
+.common-heart-title h5{
+    color: var(--color);
+}
+
+
+.common-heart-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--white);
+
+}
+
+.common-heart-content .nav {
+    width: 20% !important;
+    height: auto !important;
+    background-color: var(--gray) !important;
+}
+
+
+.common-heart-content .tab-content {
+    width: 80% !important;
+    height: auto !important;
+    padding: 3%;
+}
+
+.common-heart-content button {
+    width: 100% !important;
+    height: 150px !important;
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+}
+
+
+.common-heart-content button:hover {
+    color: var(--color) !important;
+}
+
+.common-heart-content button i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color);
+}
+
+.heart-content-details h3{
+    color: var(--color);
+}
+
+.heart-content-details h4{
+    color: var(--color1);
+    font-size: 20px;
+}
+
+.heart-content-details ul li{
+    color: var(--black);
+    font-weight: 700;
+}
+
+
+.heart-content-details p{
+    color: var(--black);
+    font-size: 15px;
+}
+
+.heart-content-details .main-blue{
+    color: var(--black);
+    font-weight: 700;
+}
+
+
+.common-heart-content .active {
+    background-color: var(--white) !important;
+    color: var(--color) !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+}
+
+.heart-content-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heart-content-images img{
+    width: 48%;
+    height: 300px;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 10px var(--black));
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+    .common-heart-content .heart-row{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .common-heart-content .nav {
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        background-color: var(--gray) !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+        flex-direction: row !important;
+    }
+    .common-heart-content button {
+        width: 30% !important;
+        height: 150px !important;
+        color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        border-top-left-radius: 50px !important;
+        border-bottom-left-radius: 50px !important;
+        border-top-right-radius: 50px !important;
+        border-bottom-right-radius: 50px !important;
+    }
+    
+
+    
+    .common-heart-content .tab-content {
+        width: 100% !important;
+        height: auto !important;
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .common-heart-content button {
+        width: 47% !important;
+        height: 150px !important;
+        color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        border-top-left-radius: 50px !important;
+        border-bottom-left-radius: 50px !important;
+        border-top-right-radius: 50px !important;
+        border-bottom-right-radius: 50px !important;
     }
 }
