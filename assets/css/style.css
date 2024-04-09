@@ -1334,3 +1334,160 @@ a {
         border-bottom-right-radius: 50px !important;
     }
 }
+
+/* home-howWeDo-content  */
+
+.home-howWeDo-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-howWeDo-content .home-howWeDo-boxs{
+    width: 22%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width:600px) {
+    .home-howWeDo-content .home-howWeDo-boxs{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:600px) and (max-width:992px) {
+    .home-howWeDo-content .home-howWeDo-boxs{
+        width: 47%;
+    }
+}
+
+
+.home-howWeDo-content .home-howWeDo-boxs .home-howWeDo-images{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    border: 3px solid var(--color);
+    position: relative;
+    filter: drop-shadow(0 0 10px var(--color));
+    margin-bottom: 8%;
+
+}
+
+.home-howWeDo-content .home-howWeDo-boxs:nth-child(even) .home-howWeDo-images{
+  
+    filter: drop-shadow(0 0 10px var(--color1));
+
+}
+
+
+.home-howWeDo-content .home-howWeDo-boxs:nth-child(1) .home-howWeDo-images::before{
+    content: '01';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    top: 25%;
+    right: 0;
+    transform: translate(30%,-50%);
+    color: var(--text);
+    font-weight: 800;
+
+}
+
+.home-howWeDo-content .home-howWeDo-boxs:nth-child(2) .home-howWeDo-images::before{
+    content: '02';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    top: 25%;
+    right: 0;
+    transform: translate(30%,-50%);
+    color: var(--text);
+    font-weight: 800;
+
+}
+
+.home-howWeDo-content .home-howWeDo-boxs:nth-child(3) .home-howWeDo-images::before{
+    content: '03';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    top: 25%;
+    right: 0;
+    transform: translate(30%,-50%);
+    color: var(--text);
+    font-weight: 800;
+
+}
+
+.home-howWeDo-content .home-howWeDo-boxs:nth-child(4) .home-howWeDo-images::before{
+    content: '04';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+    top: 25%;
+    right: 0;
+    transform: translate(30%,-50%);
+    color: var(--text);
+    font-weight: 800;
+
+}
+
+.home-howWeDo-content .home-howWeDo-boxs:nth-child(even) .home-howWeDo-images{
+    border: 3px solid var(--color1);
+}
+
+.home-howWeDo-content .home-howWeDo-boxs .home-howWeDo-images img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.home-howWeDo-boxContent h4{
+    color: var(--color);
+    font-size: 20px;
+}
+
+
+.home-howWeDo-boxContent p{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.home-howWeDo-content .home-howWeDo-boxs:nth-child(even) .home-howWeDo-boxContent h4{
+    color: var(--color1);
+}
