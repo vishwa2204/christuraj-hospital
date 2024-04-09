@@ -841,6 +841,87 @@
     <!-- FAQ End  -->
 
 
+
+    <!-- Form-section online Booking start -->
+    <section class="form-container container" id="applyForm">
+      <center><h5>Book Online</h5></center>  
+      <center><h2>Book you Preffered Appoinment date</h2></center> 
+        
+        <div class="online-booking">
+            <form action="Watsapp()" method="POST">
+                <input type="text" placeholder="Enter Your Name" id="names" required><br>
+                <input type="text" placeholder="Location" id="emails" required><br>
+                <input type="number" placeholder="Enter Your Number" id="numbers" required><br>
+                <input type="datetime-local" class="form-date" id="formDates" placeholder="Select Your Date and Time"
+                    required><br>
+                <select name="select" id="categorys" required>
+                    <option selected disabled value="">SELECT PURCHASE</option>
+                    <option>Department of emergency and critical care medicine</option>
+                    <option>Department of cardiac sciences.</option>
+                    <option>Department of paediatrics and Neonatalogy </option>
+                    <option>Department of neuromedicine </option>
+                    <option>Department of orthopaedics and reconstructive surgery</option>
+                    <option>Department of Minimal invasive surgery</option>
+                    <option>Department of anaesthesiology</option>
+                    <option>Department of Gastro Medicine </option>
+                    <option>Department of radio diagnosis</option>
+                    <option>Department of Pulmonology</option>
+                    <option>Department of obstetrics and gynaecology</option>
+                </select><br>
+                <button type="button" onclick="Watsapp()"> Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Form-section end -->
+
+    <script>
+
+
+        function Watsapp() {
+
+            var name = document.getElementById('names').value;
+            var email = document.getElementById('emails').value;
+            var number = document.getElementById('numbers').value;
+            var date = document.getElementById('formDates').value;
+            var select = document.getElementById('categorys').value;
+
+            if (name == '' || email == '' || number == '' || date == '' || select == '') {
+                alert("Please Fill all fields")
+            } else {
+                //////////// Format the message content/////////////
+
+                var formattedMessage = (
+                    " *Name* : " + name + "\n" +
+                    " *Email* : " + email + "\n" +
+                    " *Phone Number* : " + number + "\n" +
+                    " *Date* : " + date + "\n" +
+                    " *Category* : " + select);
+
+
+                // Encode the message for the URL
+                var encodedMessage = encodeURIComponent(formattedMessage);
+
+                // Construct the WhatsApp URL
+
+                var url = "https://wa.me/+919342229700?text=" + encodedMessage;
+
+
+                // Open the WhatsApp URL in a new tab/window
+                window.open(url);
+            }
+
+
+
+
+
+        }
+
+    </script>
+
+
     <!-- footer Start -->
 
     <footer>
@@ -867,7 +948,7 @@
                 <div class="footer-address">
                     <i class="fa-solid fa-address-book"></i>
                     <div class="footer-number">
-                        <a href="#"> +91 98765 43210</a>
+                        <a href="#"> +91 98765 43210</a><br>
                         <a href="#"> +91 98765 43210</a>
 
                     </div>
@@ -894,21 +975,22 @@
             <div class="footer-boxs">
                 <h4>Our departments</h4>
                 <ul>
-                    <li><a href="#">Department of emergency and critical care medicine</a></li>
                     <li><a href="#">Department of cardiac sciences</a></li>
-                    <li><a href="#">Department of paediatrics and Neonatalogy </a></li>
                     <li><a href="#">Department of neuromedicine </a></li>
-                    <li><a href="#">Department of orthopaedics and reconstructive surgery</a></li>
-                    <li><a href="#">Department of Minimal invasive surgery</a></li>
                     <li><a href="#">Department of anaesthesiology</a></li>
                     <li><a href="#">Department of Gastro Medicine </a></li>
                     <li><a href="#">Department of radio diagnosis</a></li>
                     <li><a href="#">Department of Pulmonology</a></li>
-                    <li><a href="#">Department of obstetrics and gynaecology</a></li>
 
 
                 </ul>
             </div>
+
+        </div>
+        <hr>
+
+        <div class="after-footer">
+            <p>Copyright @ 2024 Christuraj Hospital </p>
 
         </div>
     </footer>
